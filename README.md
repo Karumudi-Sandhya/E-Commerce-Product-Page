@@ -91,7 +91,7 @@ ecommerce-product-page/
 
 * No external APIs are used
 
-* All functionalities are implemeted using ***Client-side JavaScript**
+* All functionalities are implemeted using **Client-side JavaScript**
 
 ## 🔗Output Description
 
