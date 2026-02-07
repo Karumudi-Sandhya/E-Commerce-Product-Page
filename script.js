@@ -1,27 +1,61 @@
 let quantity = 1;
+let basePrice = 2999;
+let stock = 10;
 
-const qtyDisplay = document.getElementById("qty");
-const statusText = document.getElementById("status");
+function changeImg(src) {
+    document.getElementById("mainImg").src = src;
+}
 
-document.querySelector(".plus").addEventListener("click", () => {
-    quantity++;
-    qtyDisplay.textContent = quantity;
-});
+function increase() {
+    if (quantity < stock) {
+        quantity++;
+        updatePrice();
+    }
+}
 
-document.querySelector(".minus").addEventListener("click", () => {
+function decrease() {
     if (quantity > 1) {
         quantity--;
-        qtyDisplay.textContent = quantity;
+        updatePrice();
     }
-});
+}
 
-document.getElementById("cartBtn").addEventListener("click", () => {
-    const product = document.querySelector("h2").dataset.name;
-    const price = document.querySelector(".cost").dataset.price;
+function updatePrice() {
+    document.getElementById("qty").innerText = quantity;
+    document.getElementById("price").innerText = basePrice * quantity;
+}
 
-    const total = quantity * price;
+function selectColor(color) {
+    document.getElementById("colorText").innerText =
+        "Selected Color: " + color;
+}
 
-    statusText.style.color = "green";
-    statusText.textContent =
-        `${quantity} ${product}(s) added | Total: ₹${total}`;
-});
+function addCart() {
+    showToast("Item added to cart successfully!");
+}
+
+function addWish() {
+    showToast("Added to wishlist ❤️");
+}
+
+function toggleSpecs() {
+    let specs = document.getElementById("specs");
+    specs.style.display = specs.style.display === "block" ? "none" : "block";
+}
+
+function showToast(message) {
+    let toast = document.getElementById("toast");
+    toast.innerText = message;
+    toast.style.display = "block";
+
+    setTimeout(() => {
+        toast.style.display = "none";
+    }, 2000);
+}
+
+/* Delivery Date */
+let deliveryDate = new Date();
+deliveryDate.setDate(deliveryDate.getDate() + 4);
+document.getElementById("delivery").innerText =
+    "Delivery by " + deliveryDate.toDateString();
+
