@@ -54,7 +54,7 @@ It displays product details interactively and enhances user experience through s
 
 ## How the Application Works
 
-*The product page loads with default product details and price
+* The product page loads with default product details and price
 
 * Users can switch product images using thumbnail clicks
 
