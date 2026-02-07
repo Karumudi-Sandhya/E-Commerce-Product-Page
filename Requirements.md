@@ -28,20 +28,26 @@
 
 ## Functional Requirements
 
-* Display product details clearly
+* Display product details
 
-* Increase or decrease product quantity
+* Allow quantity and variant selection
 
-* Calculate total price dynamically
+* Update price dynamically
 
-* Show confirmation message on adding product
+* Add product to cart and wishlist
+
+* Show delivery estimate
+
+* Toggle product specifications
 
 ## Non-Functional Requirements
 
-* Fast response time
+* User-friendly interface
 
-* Simple and clean UI
+* Fast response to user actions
 
-* No dependency on external libraries
+* Clean and readable code structure
 
-* Works fully offline
+* Browser compatibility
+
+* Maintainability and scalability
