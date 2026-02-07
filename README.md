@@ -1,26 +1,30 @@
 ## E-Commerce Product Page
 
-This project is a simple e-commerce product page that displays product details and allows users to adjust quantity and calculate the total price dynamically.
-It is built using HTML, CSS, and JavaScript with a clean interface and interactive user experience.
+This project is a front-end e-commerce product page developed using HTML, CSS, and JavaScript.
+It displays product details interactively and enhances user experience through smart, dynamic features such as live price updates, variant selection, and user feedback.
 
 ## 🔗Project Overview
 
-* Displays a single product with image, name, price, and description
+* This e-commerce product page displays detailed information about a single product in an interactive format.
 
-* Allows users to increase or decrease product quantity
+* It allows users to view multiple product images using a thumbnail-based image gallery.
 
-* Calculates total cost instantly based on selected quantity
+* Users can select product variants such as color and adjust the quantity before purchasing.
 
-* Designed as a front-end focused mini e-commerce module
+* The page dynamically updates the product price and delivery details using JavaScript.
+
+* The application focuses on improving user experience through responsive design and interactive features.
 
 ## 🔗Features Implemented
  **Product Information**
 
-* Product name and image displayed clearly
+* Product name, brand, and price display
 
-* Product price shown using dynamic data attributes
+* Product image gallery with thumbnail preview
 
-* Short description for better understanding
+* Product specifications section (show/hide toggle)
+
+* Stock availability display
 
 **Smart Functionality** 
 
@@ -32,78 +36,86 @@ It is built using HTML, CSS, and JavaScript with a clean interface and interacti
 
 **User Experience**
 
-* Simple and clean card-based layout
+* Add to Cart functionality
 
-* Easy-to-use quantity selector
+* Add to Wishlist option
 
-* Instant feedback without page reload
+* Toast-style notifications for user actions
 
+* Interactive UI without page reload
+  
  ## 🔗Technologies Used
 
 * HTML – Creates the structure of the product page
 
-* CSS – Handles layout, styling, and visual design
+* CSS – Handles layout, styling, and responsive design
 
-* JavaScript – Manages quantity control and price calculation
+* JavaScript – Manages quantity control,price calculation,Dynamic behaviour and Logic.
 
 ## How the Application Works
 
-* The page loads and displays product details like image, name, price, and description.
+*The product page loads with default product details and price
 
-* Product data is stored using HTML data attributes for easy access.
+* Users can switch product images using thumbnail clicks
 
-* Users increase or decrease the product quantity using + and − buttons.
+* Quantity buttons dynamically update total price
 
-* JavaScript updates the quantity instantly without reloading the page.
+* Variant selection updates selected product information
 
-* Clicking Add to Cart calculates the total price based on quantity.
+* JavaScript calculates delivery date and shows it to the user
 
-* A confirmation message is shown with the selected quantity and total cost.
+* Add to Cart and Wishlist actions trigger toast notifications
 
-* All functionality runs on the client side using JavaScript only.
+* Specifications can be toggled for a cleaner UI
 
 ## Project Structure
 
 ecommerce-product-page/
 
-* ├── index.html    // Main structure of the product page
-* ├── style.css     // Styling and layout of the page
-* ├── script.js     // Handles interactions and logic
-* └── assets/       // Contains product images (optional)
+* ├── index.html              // Main structure of the product page
+* ├── style.css             // Styling and layout of the page
+* ├── script.js            // Handles interactions and logic
+* └── Output product page // Contains product images
 
 ## 🔗Example Inputs
 
-* Quantity selected: 1, 2, 3, …
+* Quantity: 1, 2, 3, …
 
-* User clicks Add to Cart button
+* Color Selection: Black / Blue / Red
 
+* Button Actions: Add to Cart, Add to Wishlist
+
+* Toggle Action: View / Hide Specifications
+  
 ## 🔗API Configuration
 
 * No external APIs are used
 
-* Logic is handled completely on the client side
+* All functionalities are implemeted using ***Client-side JavaScript**
 
 ## 🔗Output Description
 
-* Product card displayed at the center of the screen
+* Product details displayed dynamically
 
-* Product image on the left and details on the right
+* Price updates based on selected quantity
 
-* Quantity buttons and add-to-cart action below product details
+* Visual confirmation for user actions
 
-* Result message shown after user interaction
+* Improved user interaction similar to real e-commerce platforms Result message shown after user interaction
 
 ## 🔗Future Enhancements
 
-* Add multiple products on the same page
+*Shopping cart page with total price calculation
 
-* Implement a full shopping cart page
+* User login and authentication
 
-* Integrate localStorage or backend database
+* Product reviews and ratings section
 
-* Add discount and coupon functionality
+* Backend integration using APIs
 
-* Make the design fully mobile-responsive
+* Responsive mobile-first design
+
+* Payment gateway integration
 
 ## AUuthor
 
